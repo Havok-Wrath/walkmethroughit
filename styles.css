@@ -2,4 +2,41 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f4f4;
   color: #333;
+  margin: 0;
+}
+
+header {
+  background-color: #1f2933;
+  color: white;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav a {
+  color: #9ddcff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  background-color: white;
+}
+
+footer {
+  padding: 15px;
+  background-color: #e5e7eb;
+  text-align: center;
 }
