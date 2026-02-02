@@ -136,3 +136,40 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* Resources page */
+.table-wrap {
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+.resource-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+.resource-table th,
+.resource-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.resource-table thead th {
+  background: #f5f5f5;
+}
+
+.small-note {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+}
+
+/* Responsive: keep table readable on small screens */
+@media (max-width: 768px) {
+  .resource-table th,
+  .resource-table td {
+    padding: 0.6rem;
+  }
+}
