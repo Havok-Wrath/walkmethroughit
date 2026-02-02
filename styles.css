@@ -53,10 +53,11 @@ footer {
 
 /* Make the banner behave like a horizontal header */
 .site-banner {
+  object-position: center top;
   display: block;
   width: 100%;
   max-width: 1100px;
-  height: 180px;          /* controls banner height */
+  height: 225px;          /* controls banner height */
   object-fit: cover;      /* crops image instead of stretching */
   margin: 0 auto 10px;
   border-radius: 8px;
