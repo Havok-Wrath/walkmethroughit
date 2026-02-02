@@ -202,3 +202,55 @@ footer {
     padding: 0.75rem;
   }
 }
+
+/* Projects page */
+.project-showcase {
+  margin-top: 1.25rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.project-card {
+  background: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.project-plan {
+  margin-top: 1.75rem;
+}
+
+.project-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+.project-table th,
+.project-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.project-table thead th {
+  background: #f5f5f5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-table th,
+  .project-table td {
+    padding: 0.6rem;
+  }
+}
