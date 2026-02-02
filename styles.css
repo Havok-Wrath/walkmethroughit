@@ -53,7 +53,7 @@ footer {
 
 /* Make the banner behave like a horizontal header */
 .site-banner {
-  object-position: center top;
+  object-position: center 35%;
   display: block;
   width: 100%;
   max-width: 1100px;
