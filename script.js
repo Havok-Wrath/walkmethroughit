@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!banner || !closeButton) return;
 
   // Change this whenever you update the banner message
-  const SITE_STATUS_VERSION = "2026-02-09";
+  const SITE_STATUS_VERSION = "2026-02-08";
   const storageKey = `siteStatusDismissed_${SITE_STATUS_VERSION}`;
 
   // Hide banner only if THIS version was dismissed
