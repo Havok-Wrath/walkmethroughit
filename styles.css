@@ -352,3 +352,49 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* Site status banner */
+.site-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  background-color: #f9f9f9;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+
+  padding: 0.75rem 1.25rem;
+  font-size: 0.9rem;
+}
+
+.site-status p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.site-status button {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #555;
+}
+
+.site-status button:hover,
+.site-status button:focus {
+  color: #000;
+}
+
+/* Mobile adjustment */
+@media (max-width: 600px) {
+  .site-status {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-status button {
+    align-self: flex-end;
+  }
+}
