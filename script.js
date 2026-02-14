@@ -38,3 +38,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+const form = document.getElementById("suggestionForm");
+
+if (form) {
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const message = document.getElementById("confirmationMessage");
+    message.style.display = "block";
+
+    form.reset();
+  });
+}
+
