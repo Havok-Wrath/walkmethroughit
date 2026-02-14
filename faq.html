@@ -85,8 +85,45 @@
           material. New walkthroughs will be added as the site grows.
         </p>
       </details>
+        </section>
+
+    <section class="suggestion-section">
+      <h2>Submit a Suggestion</h2>
+      <p>Have an idea, correction, or improvement? Let us know so we can improve WalkMeThroughIt.</p>
+
+      <form id="suggestionForm">
+        
+        <label for="name">Name (optional):</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email (optional):</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="page">Page or Guide:</label><br>
+        <input type="text" id="page" name="page" placeholder="Example: FAQ page"><br><br>
+
+        <label for="type">Suggestion Type:</label><br>
+        <select id="type" name="type">
+          <option value="improvement">Improvement</option>
+          <option value="correction">Correction</option>
+          <option value="new_idea">New Idea</option>
+          <option value="bug">Bug / Issue</option>
+        </select><br><br>
+
+        <label for="message">Your Suggestion:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit">Submit</button>
+
+      </form>
+
+      <p id="confirmationMessage" style="display:none; color: green; font-weight: bold;">
+        Thank you! Your suggestion has been submitted.
+      </p>
     </section>
+
   </main>
+
 
   <footer>
     <hr />
