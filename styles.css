@@ -45,31 +45,27 @@ footer {
    Banner / Header Overrides
    ========================= */
 
-/* Override the generic header styling for banner layout */
 .site-header {
   background-color: #1f2933;
   padding: 12px 16px;
 }
 
-/* Make the banner behave like a horizontal header */
 .site-banner {
   object-position: center 35%;
   display: block;
   width: 100%;
   max-width: 1100px;
-  height: 225px;          /* controls banner height */
-  object-fit: cover;      /* crops image instead of stretching */
+  height: 225px;
+  object-fit: cover;
   margin: 0 auto 10px;
   border-radius: 8px;
 }
 
-/* Keep nav aligned with banner width */
 .site-header nav {
   max-width: 1100px;
   margin: 0 auto;
 }
 
-/* Mobile adjustment */
 @media (max-width: 480px) {
   .site-banner {
     height: 140px;
@@ -94,10 +90,44 @@ footer {
   margin-top: 1.5rem;
 }
 
+/* NEW: Bottom layout for About page (list left, video tile right) */
+.about-bottom {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.25rem;
+  align-items: start;
+  margin-top: 1.5rem;
+}
+
+.about-video {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-video .about-card {
+  width: 100%;
+  max-width: 350px; /* tile size */
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .about-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* NEW: Stack bottom section on mobile */
+@media (max-width: 900px) {
+  .about-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .about-video {
+    justify-content: flex-start;
+  }
+
+  .about-video .about-card {
+    max-width: 100%;
   }
 }
 
@@ -130,7 +160,6 @@ footer {
   margin-top: 1.5rem;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .guide-grid {
     grid-template-columns: 1fr;
@@ -166,7 +195,6 @@ footer {
   font-size: 0.95rem;
 }
 
-/* Responsive: keep table readable on small screens */
 @media (max-width: 768px) {
   .resource-table th,
   .resource-table td {
@@ -196,7 +224,6 @@ footer {
   margin-top: 0.75rem;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .faq-item {
     padding: 0.75rem;
@@ -243,7 +270,6 @@ footer {
   background: #f5f5f5;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .project-grid {
     grid-template-columns: 1fr;
@@ -285,7 +311,6 @@ footer {
   font-size: 0.95rem;
 }
 
-/* Responsive */
 @media (max-width: 900px) {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -346,7 +371,6 @@ footer {
   font-size: 0.95rem;
 }
 
-/* Responsive */
 @media (max-width: 900px) {
   .contact-grid {
     grid-template-columns: 1fr;
@@ -387,7 +411,6 @@ footer {
   color: #000;
 }
 
-/* Mobile adjustment */
 @media (max-width: 600px) {
   .site-status {
     flex-direction: column;
@@ -419,28 +442,11 @@ footer {
   border: 0;
 }
 
-/* Make the demo tile take 2 columns on desktop */
-@media (min-width: 900px) {
-  .demo-card {
-    grid-column: span 2;
-  }
-
-  .demo-card .video-container {
-    max-width: 100%;
-  }
-}
-
-/* Fix demo card layout */
+/* Keep demo cards from affecting other pages */
 .demo-card {
-  text-align: left;          /* matches a "tile" look better */
+  text-align: left;
 }
 
-.demo-card .video-container {
-  max-width: 100%;           /* fill the demo tile width */
-  margin: 12px 0;            /* align left inside card */
-}
-
-/* Stop the iframe from inheriting weird inline sizing behavior */
 .demo-card iframe {
   display: block;
 }
