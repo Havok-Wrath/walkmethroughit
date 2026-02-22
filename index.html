@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Character encoding -->
   <meta charset="UTF-8" />
-
-  <!-- Makes the layout scale correctly on phones/tablets -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Walk Me Through It</title>
   <link rel="stylesheet" href="styles.css?v=2">
-
 </head>
 
 <body>
@@ -35,24 +31,22 @@
   </header>
 
   <div class="site-status" id="siteStatus">
-  <p>
-    🚧 <strong>Site Status:</strong> Walk Me Through It is actively under development.
-    CURRENT STATUS — Module 5 Progress:
-Interactive JavaScript features are now live, adding responsiveness and dynamic content updates across the site.
+    <p>
+      🚧 <strong>Site Status:</strong> Walk Me Through It is actively under development.
+      CURRENT STATUS — Module 5 Progress:
+      Interactive JavaScript features are now live, adding responsiveness and dynamic content updates across the site.
 
-COMING NEXT WEEK:
-A fully functional form (contact, registration, or survey) with submission confirmation to capture user input.
-  </p>
-  <button id="dismissStatus" aria-label="Dismiss site status message">
-    ✕
-  </button>
-</div>
-
+      COMING NEXT WEEK:
+      A fully functional form (contact, registration, or survey) with submission confirmation to capture user input.
+    </p>
+    <button id="dismissStatus" aria-label="Dismiss site status message">
+      ✕
+    </button>
+  </div>
 
   <main>
     <h2>Welcome</h2>
 
-    <!-- Brief message explaining what the site is about -->
     <p>
       Walk Me Through It is a community-driven platform where users can find,
       submit, revise, and critique step-by-step instructions for completing tasks
@@ -63,46 +57,52 @@ A fully functional form (contact, registration, or survey) with submission confi
       The goal is to make confusing processes easier for beginners by presenting
       clear steps and short explanations that focus on what to do and why it matters.
     </p>
-  <h2>Website Demo</h2>
 
-  <div class="video-container">
-    <!-- paste your YouTube iframe below -->
-    <div class="video-container">
-  <iframe
-    src="https://www.youtube.com/embed/D9iHbpzM_9Y"
-    title="WalkMeThroughIt Demo"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-  </iframe>
-</div>
-  </div>
-  <section class="featured-guides">
-  <h2>Featured Walkthroughs</h2>
+    <section class="featured-guides">
+      <h2>Featured Walkthroughs</h2>
 
-  <div class="guide-grid">
-    <article class="guide-card">
-      <img src="images/tech-guide.png" alt="Technology troubleshooting icon" class="guide-icon">
-      <h3>Tech Help</h3>
-      <p>Setup, troubleshooting, and simple fixes for everyday devices and apps.</p>
-      <p><a class="card-link" href="guides.html">View Tech Guides</a></p>
-    </article>
+      <div class="guide-grid">
 
-    <article class="guide-card">
-      <img src="images/diy-guide.png" alt="DIY tools icon" class="guide-icon">
-      <h3>DIY Projects</h3>
-      <p>Home repair and improvement walkthroughs that focus on tools and safety.</p>
-      <p><a class="card-link" href="guides.html">View DIY Guides</a></p>
-    </article>
+        <!-- Demo tile (video card) -->
+        <article class="guide-card demo-card">
+          <h3>Website Demo</h3>
 
-    <article class="guide-card">
-      <img src="images/everyday-guide.png" alt="Everyday checklist icon" class="guide-icon">
-      <h3>Everyday Tasks</h3>
-      <p>Simple step-by-step help for common tasks people usually learn the hard way.</p>
-      <p><a class="card-link" href="guides.html">View Everyday Guides</a></p>
-    </article>
-  </div>
-</section>
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/D9iHbpzM_9Y"
+              title="WalkMeThroughIt Demo"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <p>Quick walkthrough of the layout and how to use the guides.</p>
+        </article>
+
+        <article class="guide-card">
+          <img src="images/tech-guide.png" alt="Technology troubleshooting icon" class="guide-icon">
+          <h3>Tech Help</h3>
+          <p>Setup, troubleshooting, and simple fixes for everyday devices and apps.</p>
+          <p><a class="card-link" href="guides.html">View Tech Guides</a></p>
+        </article>
+
+        <article class="guide-card">
+          <img src="images/diy-guide.png" alt="DIY tools icon" class="guide-icon">
+          <h3>DIY Projects</h3>
+          <p>Home repair and improvement walkthroughs that focus on tools and safety.</p>
+          <p><a class="card-link" href="guides.html">View DIY Guides</a></p>
+        </article>
+
+        <article class="guide-card">
+          <img src="images/everyday-guide.png" alt="Everyday checklist icon" class="guide-icon">
+          <h3>Everyday Tasks</h3>
+          <p>Simple step-by-step help for common tasks people usually learn the hard way.</p>
+          <p><a class="card-link" href="guides.html">View Everyday Guides</a></p>
+        </article>
+
+      </div>
+    </section>
 
   </main>
 
@@ -110,7 +110,7 @@ A fully functional form (contact, registration, or survey) with submission confi
     <hr />
     <p>© 2026 Walk Me Through It</p>
   </footer>
-<script src="script.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
