@@ -428,3 +428,17 @@ footer {
   max-width: 400px;   /* tile size */
   margin: 20px auto;  /* centers it with spacing */
 }
+
+/* Demo video tile tweaks */
+.demo-card .video-container {
+  margin: 12px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Make the demo tile take 2 columns on desktop */
+@media (min-width: 900px) {
+  .demo-card {
+    grid-column: span 2;
+  }
+}
