@@ -429,3 +429,18 @@ footer {
     max-width: 100%;
   }
 }
+
+/* Fix demo card layout */
+.demo-card {
+  text-align: left;          /* matches a "tile" look better */
+}
+
+.demo-card .video-container {
+  max-width: 100%;           /* fill the demo tile width */
+  margin: 12px 0;            /* align left inside card */
+}
+
+/* Stop the iframe from inheriting weird inline sizing behavior */
+.demo-card iframe {
+  display: block;
+}
